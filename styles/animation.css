@@ -1,0 +1,26 @@
+@keyframes switchhome {
+    0% {
+        background-image: url(../images/bg1.jpg);
+    }
+
+    20% {
+        background-image: url(../images/bg2.jpg);
+    }
+
+    40% {
+        background-image: url(../images/bg2.jpg);
+    }
+
+    60% {
+        background-image: url(../images/bg3.jpg);
+    }
+
+    80% {
+        background-image: url(../images/bg3.jpg);
+    }
+
+    to {
+        background-image: url(../images/bg1.jpg);
+    }
+}
+
