@@ -19,7 +19,6 @@
 
 body {
     background-color: var(--bg-ligth);
-
 }
 
 .wrap {
@@ -60,7 +59,6 @@ body {
     font-weight: 300;
     line-height: 45px;
     color: #000;
-
 }
 
 .header_name a:hover {
@@ -75,15 +73,14 @@ body {
 
 .menu-item {
     line-height: 50px;
-    padding: 0 10px;
+    padding: 0 15px;
     line-height: 50px;
     color: #000;
+    transition: .4s linear;
 }
 
 .menu-item.activeLink {
     color: white;
-    transition: .4s linear;
-
 }
 
 .menu-item:hover {
@@ -124,7 +121,7 @@ body {
     right: 50px;
     transition: 1s;
     background-color: var(--bg-ligth);
-    border-radius: 0 0  40% 40%;
+    border-radius: 0 0 40% 40%;
 }
 
 .setting:hover {
