@@ -1,6 +1,7 @@
 :root {
     --bg-dark: #9e9e9e;
     --bg-ligth: #eeeeee;
+    scroll-behavior: smooth;
 }
 
 .main-color {
@@ -18,6 +19,7 @@
 
 body {
     background-color: var(--bg-ligth);
+
 }
 
 .wrap {
