@@ -17,10 +17,10 @@
     </head>
     <body>
         <div class="wrap">
-            <header>
-                    <img class="logo" src="images/3cubes.png" alt="logo" />
-                    <div class="name"><a href="#home">3 C U B A</a></div>
-                <nav class="menu">
+            <header class="header">
+                <img class="header_logo" src="images/3cubes.png" alt="logo" />
+                <div class="header_name"><a href="#home">3 C U B A</a></div>
+                <nav class="header_menu">
                     <a href="#about-us" class="menu-item">О нас</a>
                     <a href="#team" class="menu-item">Команда</a>
                     <a href="#portfolio" class="menu-item">Портфолио</a>
@@ -28,13 +28,24 @@
                     <a href="#contacts" class="menu-item">Контакты</a>
                 </nav>
                 <div class="setting">
-                    <button style="background-color: darkred" onclick="changeColor('darkred')"></button>
-                    <button style="background-color: darkblue" onclick="changeColor('darkblue')"></button>
-                    <button style="background-color: darkgreen" onclick="changeColor('green')"></button>
+                    <div class="setting_buttons">
+                        <button
+                            style="background-color: darkred"
+                            onclick="changeColor('darkred')"
+                        ></button>
+                        <button
+                            style="background-color: darkblue"
+                            onclick="changeColor('darkblue')"
+                        ></button>
+                        <button
+                            style="background-color: darkgreen"
+                            onclick="changeColor('green')"
+                        ></button>
+                    </div>
+                    <div class="setting_ico"></div>
                 </div>
             </header>
-            <section id="home" class="section">
-            </section>
+            <section id="home" class="section"></section>
             <section id="about-us" class="section">
                 <h2 class="main-color">О нас</h2>
             </section>

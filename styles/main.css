@@ -28,11 +28,11 @@ body {
     margin: 0 auto;
 }
 
-header {
+.header {
     background-color: var(--bg-dark);
     opacity: 0.9;
     display: grid;
-    grid-template-columns: 50px 200px 1fr 130px;
+    grid-template-columns: 50px 200px 1fr;
     width: 1600px;
     height: 50px;
     position: fixed;
@@ -45,16 +45,16 @@ header {
     grid-template-columns: 50px 200px;
 }
 
-.logo {
+.header_logo {
     padding-left: 30px;
     height: 45px;
 }
 
-.name {
+.header_name {
     padding-top: 5px;
 }
 
-.name a {
+.header_name a {
     font-size: 30px;
     padding-left: 50px;
     font-weight: 300;
@@ -63,11 +63,11 @@ header {
 
 }
 
-.name a:hover {
+.header_name a:hover {
     color: #fff;
 }
 
-.menu {
+.header_menu {
     display: flex;
     flex-direction: row;
     padding-left: 100px;
@@ -91,14 +91,14 @@ header {
     color: white;
 }
 
-.setting {
+.setting_buttons {
     display: flex;
     align-items: center;
     height: 50px;
     padding-left: 10px;
 }
 
-button {
+.setting_buttons button {
     border: none;
     border-radius: 50%;
     width: 30px;
@@ -108,10 +108,35 @@ button {
     box-shadow: 0 0 40px #ffffff50 inset;
 }
 
-button:hover {
+.setting_buttons button:hover {
     box-shadow: 0 0 10px 1px #ffffff;
 }
 
+.setting {
+    box-shadow: 0 0 5px 1px #6b6b6b;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 50px 50px;
+    width: 130px;
+    height: 100px;
+    z-index: 15;
+    top: -50px;
+    right: 50px;
+    transition: 1s;
+    background-color: var(--bg-ligth);
+    border-radius: 0 0  40% 40%;
+}
+
+.setting:hover {
+    top: 0;
+}
+
+.setting_ico {
+    background-image: url(../images/settings.png);
+    background-size: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 h2 {
     font-size: 36px;
@@ -149,11 +174,11 @@ h2 {
     font-size: 3rem;
     opacity: 0;
     padding-left: 100px;
-    transform: translateY(100%);
+    transform: translateX(-10%);
 }
 
 .element-animation.element-show {
     opacity: 1;
     transition: all 1s;
-    transform: translateY(0%);
+    transform: translateX(0%);
 }
