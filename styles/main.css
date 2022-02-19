@@ -5,7 +5,7 @@
 }
 
 .main-color {
-    color: darkred;
+    color: black;
     transition: .3s linear;
 }
 
@@ -56,7 +56,6 @@ body {
 .header_name a {
     font-size: 30px;
     padding-left: 50px;
-    font-weight: 300;
     line-height: 45px;
     color: #000;
 }
@@ -75,24 +74,26 @@ body {
     line-height: 50px;
     padding: 0 15px;
     line-height: 50px;
+    font-weight: bold;
     color: #000;
     transition: .4s linear;
 }
 
 .menu-item.activeLink {
-    color: white;
+    color: white !important;
 }
 
 .menu-item:hover {
     background-color: #636363;
-    color: white;
+    color: white !important;
 }
 
 .setting_buttons {
     display: flex;
     align-items: center;
-    height: 50px;
-    padding-left: 10px;
+    width: 90px;
+    height: 40px;
+    padding: 10px 0 0 10px;
 }
 
 .setting_buttons button {
@@ -113,15 +114,15 @@ body {
     box-shadow: 0 0 5px 1px #6b6b6b;
     position: absolute;
     display: grid;
-    grid-template-rows: 50px 50px;
-    width: 130px;
-    height: 100px;
+    grid-template-rows: 80px 50px;
+    width: 90px;
+    height: 130px;
     z-index: 15;
-    top: -50px;
+    top: -80px;
     right: 50px;
     transition: 1s;
     background-color: var(--bg-ligth);
-    border-radius: 0 0 40% 40%;
+    border-radius: 0 0 40px 40px;
 }
 
 .setting:hover {
@@ -130,7 +131,7 @@ body {
 
 .setting_ico {
     background-image: url(../images/settings.png);
-    background-size: 30%;
+    background-size: 40%;
     background-position: center;
     background-repeat: no-repeat;
 }
