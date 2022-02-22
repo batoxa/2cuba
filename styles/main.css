@@ -167,16 +167,40 @@ h2 {
 
 }
 
-.element-animation {
+#feedback {
+    padding: 0 0 30px 100px;
+    height: auto;
+}
+
+.element-animation>li {
+    padding-bottom: 20px;
+}
+
+.element-animation>li {
     margin: 2rem 0;
-    font-size: 3rem;
+    font-size: 35px;
     opacity: 0;
-    padding-left: 100px;
     transform: translateX(-10%);
 }
 
-.element-animation.element-show {
+.element-animation.element-show>li {
     opacity: 1;
-    transition: all 1s;
     transform: translateX(0%);
+}
+
+.element-animation.element-show>li:nth-child(1) {
+    transition: all 1s;
+
+}
+
+.element-animation.element-show>li:nth-child(2) {
+    transition: all 1s;
+    transition-delay: .2s;
+}
+
+.element-animation.element-show>li:nth-child(3) {
+    transition: all 1s;
+    transition-delay: .4s;
+
+
 }
