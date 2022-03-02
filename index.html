@@ -13,23 +13,46 @@
         <title>3CUBA</title>
         <link rel="shortcut icon" href="images/3cubes.png" type="image/png" />
         <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/mob_css.css" />
         <link rel="stylesheet" href="styles/animation.css" />
     </head>
     <body>
         <div class="wrap">
             <header class="header">
-                <img class="header_logo" src="images/3cubes.png" alt="logo" />
-                <div class="header_name"><a href="#home">3 C U B A</a></div>
-                <nav class="header_menu">
-                    <a href="#about-us" class="menu-item main-color">О нас</a>
-                    <a href="#team" class="menu-item main-color">Команда</a>
-                    <a href="#portfolio" class="menu-item main-color"
-                        >Портфолио</a
-                    >
-                    <a href="#feedback" class="menu-item main-color">Отзывы</a>
-                    <a href="#contacts" class="menu-item main-color"
-                        >Контакты</a
-                    >
+                <div class="logo">
+                    <img
+                        class="header_logo"
+                        src="images/3cubes.png"
+                        alt="logo"
+                    />
+                    <div class="header_name"><a href="#home">3 C U B A</a></div>
+                </div>
+                <nav class="menu">
+                    <div class="mobile_menu">
+                        <div class="burger">
+                            <div class="burger__line burger__line_first"></div>
+                            <div class="burger__line burger__line_second"></div>
+                            <div class="burger__line burger__line_third"></div>
+                            <div class="burger__line burger__line_fourth"></div>
+                        </div>
+                        <span>Меню</span>
+                    </div>
+
+                    <div class="header_menu">
+                        <a href="#about-us" class="menu-item main-color"
+                            >О нас</a
+                        >
+                        <a href="#team" class="menu-item main-color">Команда</a>
+                        <a href="#portfolio" class="menu-item main-color"
+                            >Портфолио</a
+                        >
+                        <a href="#feedback" class="menu-item main-color"
+                            >Отзывы</a
+                        >
+                        <a href="#contacts" class="menu-item main-color"
+                            >Контакты</a
+                        >
+                    </div>
                 </nav>
                 <div class="setting">
                     <div>
@@ -118,11 +141,14 @@
                 <div class="contacts">
                     <!-- <img src="images/phone.jpg" alt="phone" height="200px"> -->
                     <div class="contacts__img"></div>
-                    <div class="contacts__phone main-color">Тел.: 322223333222322</div>
+                    <div class="contacts__phone main-color">
+                        Тел.: 322223333222322
+                    </div>
                 </div>
             </section>
         </div>
         <script src="scripts/changecolor.js"></script>
+        <script src="scripts/burger.js"></script>
         <script src="scripts/menuactivelink.js"></script>
         <script src="scripts/animationelements.js"></script>
         <script src="js.js"></script>
